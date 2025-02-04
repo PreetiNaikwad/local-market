@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_vendor.css') }}">
+    <title>Vendor Dashboard</title>
+</head>
+<body>
+<h2 id="vendor_heading">Enter Vendor Information</h2>
+<form method="POST">
+    <label>Market Name:</label>
+    <input type="text" name="market_name" required>
+    <label>Location:</label>
+    <input type="text" name="location" required>
+    <label>Contact Details:</label>
+    <input type="text" name="contact_details" required>
+    <label>Latitude:</label>
+    <input type="text" name="latitude" required>
+    <label>Longitude:</label>
+    <input type="text" name="longitude" required>
+
+    <button type="submit">Save</button>
+</form>
+<footer>
+    <div class="footer-content">
+        <h3 style=" text-align: center;">College Name</h3>
+        <h3 style=" text-align: center;">KLS Vishwanathrao Deshpande Instituite Of Techonology</h3>
+    </div>
+</footer>
+</body>
+</html>
+

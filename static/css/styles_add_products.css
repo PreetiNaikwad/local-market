@@ -1,0 +1,93 @@
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.bNk2IpH-CcTN6VSuOmv4RAHaEo?rs=1&pid=ImgDetMain');
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center center;
+    height: 90vh; /* Ensures that the body takes the full viewport height */
+    margin: 0; 
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+form {
+    width: 1000px; /* Form width */
+    margin: 50px auto; /* Center the form */
+    padding: 50px;
+    border: 1px solid #ccc; /* Border around form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+}
+
+label {
+    display: block; /* Makes the label a block element */
+    margin-bottom: 8px; /* Adds space below the label */
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 70%; /* Full width */
+    padding: 10px; /* Padding inside text box */
+    margin-bottom: 15px; /* Adds space below the input */
+    border: 1px solid #ccc; /* Light border around text boxes */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Text size inside the input */
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #ccc; /* Highlight the border when focused */
+    outline: none; /* Remove default focus outline */
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: #140703; /* Blue button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d0603; /* Darker blue on hover */
+}
+
+#vendor_heading{
+    font-size:40px;           /* Make the font size larger */
+    text-align: center;       /* Center align the text */
+
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 0.5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 100%; /* Ensure footer spans full width of the screen */
+    position: fixed;
+    bottom: 0;
+    justify-content: flex-end; /* Push content to the bottom */
+
+}
+
+
+/* Footer Content */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto; /* Center content */
+}
+
+#submit{
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: #140703; /* Blue button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    cursor: pointer;
+}

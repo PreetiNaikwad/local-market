@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_register.css') }}">
+    <title>Register page</title>
+</head>
+<body>
+<h2 id="login-heading" >Register</h2>
+
+<form method="POST" action="/register">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+    <label for="role">Role:</label>
+    <select name="role" required>
+        <option value="vendor">Vendor</option>
+        <option value="customer">Customer</option>
+    </select>
+    <button type="submit">Register</button>
+</form>
+<footer>
+    <div class="footer-content">
+        <h3 style=" text-align: center;">College Name</h3>
+        <h3 style=" text-align: center;">KLS Vishwanathrao Deshpande Instituite Of Techonology</h3>
+    </div>
+</footer>
+</body>
+</html>
+

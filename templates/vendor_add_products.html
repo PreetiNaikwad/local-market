@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_add_products.css') }}">
+    <title>Vendor Product Dashboard</title>
+    <script type="text/javascript">
+        // Function to add a new product row dynamically
+        function addProductRow() {
+            var table = document.getElementById("productTable");
+            var row = table.insertRow();
+            row.innerHTML = `
+                <td><input type="text" name="name[]" required></td>
+                <td><textarea name="promotion[]"></textarea></td>
+                <td><button type="button" style="width=100px" class="remove-btn" onclick="removeProductRow(this)">Remove</button></td>
+            `;
+        }
+
+        // Function to remove a product row
+        function removeProductRow(button) {
+            var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</head>
+<body>
+<h2 id="vendor_heading">Enter product details</h2>
+
+<form style="width=1000px" method="POST" action="{{ url_for('add_multiple_products') }}">
+    <table id="productTable">
+        <tr>
+            <th>Product Name</th>
+            <th>Promotion</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="name[]" required></td>
+            <td><textarea name="promotion[]"></textarea></td>
+        </tr>
+    </table>
+    <button type="button" onclick="addProductRow()">Add Another Product</button>
+    <br><br>
+    <input type="submit" id="submit" value="Submit Products">
+</form>
+<footer>
+    <div class="footer-content">
+        <h3 style=" text-align: center;">College Name</h3>
+        <h3 style=" text-align: center;">KLS Vishwanathrao Deshpande Instituite Of Techonology</h3>
+    </div>
+</footer>
+</body>
+</html>
+
